@@ -95,7 +95,7 @@ const embedPDF = async (pdfBlob: Blob) => {
   const docs = await pdfLoader.load();
 
   const splitter = new RecursiveCharacterTextSplitter({
-    chunkSize: 500,
+    chunkSize: 1000,
     chunkOverlap: 50,
   });
 
